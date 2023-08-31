@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POKER-31</title>
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/IMG/poker.webp">
+
+
+</head>
+
+<body>
+
+  <div class="contenedor">
+
+    <h1 class="titulo">
+      POKER 31
+    </h1>
+
+    <div class="iniciar-juego" id="iniciar-juego">
+
+      <h1 class="casino">CASINO</h1>
+      <div class="btn_iniciar">
+        <input type="button" class="btn_" id="btn_iniciar" value="Iniciar Juego">
+      </div>
+    </div>
+
+    <section class="cards" id="cards">
+
+      <div class="card">
+        <img src="/IMG/BARAJAS.webp" class="carta card-choose" alt="">
+      </div>
+      <div class="card">
+        <img src="/IMG/BARAJAS.webp" class="carta card-choose" alt="">
+      </div>
+      <div class="card">
+        <img src="/IMG/BARAJAS.webp" class="carta card-choose" alt="">
+      </div>
+      <div class="card">
+        <img src="/IMG/BARAJAS.webp" class="carta card-choose" alt="">
+      </div>
+      <div class="card">
+        <img src="/IMG/BARAJAS.webp" class="carta card-choose" alt="">
+      </div>
+
+    </section>
+
+    <section class="desarrollo_juego">
+
+
+      <div class="pantalla_turno">
+
+        <div class="turno-user turno_user-pc">
+          Tu turno
+        </div>
+        <div class="turno-pc turno_user-pc">
+          La pc está pensando
+        </div>
+      </div>
+
+      <div class="capa2">
+        <div class="pantalla_inicio-fin pantalla_fin">
+
+          <div class="user-computer_cartas cartas_resultado">
+            <div class="user-computer_carta finalcartas" id="user1-user"> </div>
+            <div class="user-computer_carta finalcartas" id="user2-user"> </div>
+            <div class="user-computer_carta finalcartas" id="user3-user"> </div>
+            <div class="user-computer_carta finalcartas" id="user4-user"> </div>
+            <div class="user-computer_carta finalcartas" id="user5-user"> </div>
+          </div>
+
+          <div class="score">
+
+            <div class="score_user-pc ocultar-700" id="score-user"> </div>
+
+          </div>
+
+          <div class="resultado">
+
+            <h1 id="ganador"> </h1>
+          </div>
+
+
+
+          <div class="btn_reiniciar">
+            <input type="button" class="btn_ " id="btn_reiniciar" value="Reiniciar Juego">
+          </div>
+
+          <div class="score">
+
+            <div class="score_user-pc mostrar-700" id="score-user2"> </div>
+
+            <div class="score_user-pc" id="score-pc"> </div>
+
+
+          </div>
+
+          <div class="user-computer_cartas cartas_resultado">
+            <div class="user-computer_carta finalcartas" id="computer1-pc"> </div>
+            <div class="user-computer_carta finalcartas" id="computer2-pc"> </div>
+            <div class="user-computer_carta finalcartas" id="computer3-pc"> </div>
+            <div class="user-computer_carta finalcartas" id="computer4-pc"> </div>
+            <div class="user-computer_carta finalcartas" id="computer5-pc"> </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="pantalla_inicio-fin choose-A">
+
+        <div class="user-computer_cartas cartas_resultado">
+          <div class="user-computer_carta " id="carta-A"> </div>
+        </div>
+
+        <div class="TituloA">
+          <h1>Elige un valor para A</h1>
+        </div>
+
+        <div class="valor-A">
+
+          <div class="">
+            <input type="button" class="btn_ btn_A1" id="value-A-1" value="1">
+          </div>
+
+          <div class="">
+            <input type="button" class="btn_ btn_A11" id="value-A-11" value="11">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="capa">
+        <div class="pantalla_carga">
+
+          <h1>Turno de la PC</h1>
+          <div class="loader">
+            <div class="container">
+              <div class="carousel">
+                <div class="love"></div>
+                <div class="love"></div>
+                <div class="love"></div>
+                <div class="love"></div>
+                <div class="love"></div>
+                <div class="love"></div>
+                <div class="love"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="carousel">
+                <div class="death"></div>
+                <div class="death"></div>
+                <div class="death"></div>
+                <div class="death"></div>
+                <div class="death"></div>
+                <div class="death"></div>
+                <div class="death"></div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="carousel">
+                <div class="robots"></div>
+                <div class="robots"></div>
+                <div class="robots"></div>
+                <div class="robots"></div>
+                <div class="robots"></div>
+                <div class="robots"></div>
+                <div class="robots"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="btn_terminar">
+        <input type="button" class="btn_" id="btn_terminar" value="Mostrar cartas">
+      </div>
+
+      <div class="user-computer">
+
+        <div class="user-computer_cartas">
+          <div class="user-computer_carta " id="user1"> </div>
+          <div class="user-computer_carta " id="user2"> </div>
+          <div class="user-computer_carta " id="user3"> </div>
+          <div class="user-computer_carta " id="user4"> </div>
+          <div class="user-computer_carta " id="user5"> </div>
+        </div>
+
+        <div class="user-computer_cartas">
+          <div class="user-computer_carta pc-cartas " id="computer1"> <img src="/IMG/BARAJAS.webp" class="carta" alt="">
+          </div>
+          <div class="user-computer_carta pc-cartas " id="computer2"> <img src="/IMG/BARAJAS.webp" class="carta" alt="">
+          </div>
+          <div class="user-computer_carta pc-cartas " id="computer3"> <img src="/IMG/BARAJAS.webp" class="carta" alt="">
+          </div>
+          <div class="user-computer_carta pc-cartas " id="computer4"> <img src="/IMG/BARAJAS.webp" class="carta" alt="">
+          </div>
+          <div class="user-computer_carta pc-cartas " id="computer5"> <img src="/IMG/BARAJAS.webp" class="carta" alt="">
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </div>
+
+  <script src="/main.js">  </script>
+
+</body>
+
+</html>
